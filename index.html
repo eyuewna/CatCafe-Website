@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mews and Brews</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        @media (max-width: 768px) {
+            /* Adjust header logo size */
+            .navbar-brand img {
+                height: 60px;
+                width: 60px;
+            }
+
+            /* Center align navbar items */
+            .navbar-nav {
+                text-align: center;
+            }
+
+            /* Adjust cover section font size */
+            #cover h1 {
+                font-size: 50px;
+            }
+
+            /* Adjust cover section text alignment */
+            #cover .text-center {
+                text-align: left;
+            }
+
+            /* Adjust featured section menu item size */
+            .menu-item img {
+                height: 200px;
+                width: 200px;
+            }
+
+            /* Adjust additional section square size */
+            .square img {
+                height: 200px;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="caticon.png" alt="Mews and Brews Logo" height="80px" width="80px">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <ul class="navbar-nav mx-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#about-us" data-toggle="tooltip" title="关于我们">About Us</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#brews" data-toggle="tooltip" title="咖啡">Brews</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#mews" data-toggle="tooltip" title="猫咪">Mews</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#contact" data-toggle="tooltip" title="联系方式">Contact</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#blog" data-toggle="tooltip" title="博客">Blog</a>
+                                </li>
+                            </ul>
+                                </li>
+                            </ul>
+                    </ul>
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#cart" data-toggle="tooltip" title="购物车">
+                                <button class="btn btn-link">
+                                    <img src="cart.png" alt="Cart Icon" height="50px" width="50px" >
+                                </button>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="search-bar">
+                    <input type="text" placeholder="Search" style="border: 5px solid #ac9e7b; border-radius: 5px; padding: 10px; font-family: Arial, sans-serif; font-size: 16px;">
+                    <button type="submit" style="background-color: #653f27; color:white; border: none; border-radius: 5px; padding: 10px 20px; font-family: Arial, sans-serif; font-size: 16px;">Search</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Cover Section -->
+    <section id="cover">
+        <div class="cover-image">
+            <h1 class="text-center" style="font-size: 70px; font-weight: bold; color: rgb(255, 255, 255); text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); font-family: 'Comic Sans MS', cursive;">Mews and Brews</h1>
+            <p class="text-center" style="font-size: 24px; color: white;">Where Cats Rule and Coffee Brews!</p>
+            <a href="#about-us" class="btn" style="background-color: rgb(118, 91, 63); color: white; outline: none;">Learn More</a>
+            <div class="text-box">
+                <h2>Welcome Mews and Brews friends!</h2>
+                <p>where cat rules, coffee brews. Step into our cozy cat cafe, sip on your favorite brew, and enjoy the company of our adorable resident cats.
+Indulge in a purr-fect blend of relaxation, companionship, and a cup of happiness. Get ready to experience the ultimate haven for cat lovers and coffee enthusiasts alike.
+</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Section -->
+    <section id="featured">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="green-rectangle">
+                        <h2 class="text-center">Our Best Sellers</h2>
+                        <div class="menu-items">
+                            <div class="menu-item">
+                                <img src="menu1.png" alt="Menu 1">
+                                <p class="item-name">Catppucino</p>
+                            </div>
+                            <div class="menu-item">
+                                <img src="menu2.png" alt="Menu 2">
+                                <p class="item-name">Kitty Cha</p>
+                            </div>
+                            <div class="menu-item">
+                                <img src="menu3.png" alt="Menu 3">
+                                <p class="item-name">Catto smothie</p>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                                <a href="#" class="btn" style="background-color: rgb(118, 91, 63); color: white; outline: none;">View More</a>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Additional Section with 3 Squares -->
+    <section id="additional">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="square">
+                                <img src="square1.png" alt="Square 1" style="width: 200px; height: 111px;">
+                                <p class="square-text" style="font-family: 'Comic Sans MS', cursive; color: pink;">GET TO MEET UP TO 40 OF OUR CATS</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="square">
+                                <img src="square2.png" alt="Square 2">
+                                <p class="square-text" style="font-family: 'Comic Sans MS', cursive; color: rgb(146, 187, 112);">FREE BOOKS YOU CAN READ</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="square">
+                                <img src="square3.png" alt="Square 3" style="width: 100px; height: 110px;">
+                                <p class="square-text" style="font-family: 'Comic Sans MS', cursive; color: rgb(96, 103, 132);">PARTICIPATE OUR PAWSOME EVENTS</p>
+                            </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <div class="walking-cat-footer">
+        <img src="catwalk.gif" alt="Walking Cat" height="50px" width="80px">
+    </div>
+
+    <footer class="text-center" style="background-image: url('greenb.jpg'); background-size: cover; color: #fff; padding: 20px;">
+        <p style="color: rgb(60, 80, 68);">Visit us today and embark on a whimsical journey at Mews and Brews, where the meows meet and the aroma of
+            freely brewed magic</p>
+
+        <div class="social-icons">
+            <a href="#" class="fb-icon" title="Facebook"><img src="fb.png" alt="Facebook Icon"></a>
+            <a href="#" class="instagram-icon" title="Instagram"><img src="ig.png"
+                    alt="Instagram Icon"></a>
+            <a href="#" class="youtube-icon" title="YouTube"><img src="yt.png" alt="YouTube Icon"></a>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="scripts.js"></script>
+    <script>
+        // Enable Bootstrap tooltips
+        $(document).ready(function () {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
+</body>
+
+</html>
